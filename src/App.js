@@ -1,22 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import PTDLLCIcon from '../src/images/PTDLLCIcon.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={PTDLLCIcon} className="App-logo box bounce-1" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         This is a page for my developer profile
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://programmedtodestroy.herokuapp.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Back to the other PTD Page
         </a>
       </header>
     </div>

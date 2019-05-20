@@ -1,0 +1,12 @@
+.nav-logo-icon{
+    position: relative;
+    float: left;
+    max-height:80px;
+    max-width:80px;
+    margin: 5px;
+    padding: 5px;
+}
+.octocat{
+    max-width: 20px;
+    max-height: 20px;
+}

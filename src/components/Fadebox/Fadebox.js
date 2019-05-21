@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Switch from '@material-ui/core/Switch';
 import Paper from '@material-ui/core/Paper';
 import Fade from '@material-ui/core/Fade';
-import Grow from '@material-ui/core/Grow';
 import { red } from '@material-ui/core/colors';
 
 const styles = theme => ({
@@ -49,13 +48,13 @@ class Fadebox extends React.Component {
       <div className={classes.root}>
         <Switch checked={checked} onChange={this.handleChange} aria-label="Collapse" />
         <div className={classes.container}>
-          <Grow in={checked}>
+          <Fade in={checked}>
             <Paper elevation={4} className={classes.paper}>
               <p className={classes.textcolor}><a href="https://programmedtodestroy.herokuapp.com/">Programmed to Destroy</a></p> 
               <br />
               <p className={classes.textcolor}><a href="https://github.com/UlysesAColon/ptddevprofile">Github</a></p> 
             </Paper>
-          </Grow>
+          </Fade>
         </div>
       </div>
     );

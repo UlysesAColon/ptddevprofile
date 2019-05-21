@@ -3,6 +3,7 @@ import Profile_Photo from '../src/images/Profile_Photo.jpg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Fadebox from './components/Fadebox/Fadebox';
+import Growbox from './components/Growbox/Growbox';
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
         <p>
          This is a page for my developer profile
         </p>
+        <br />
+        About Me:
+        <Growbox />
         <div>
-        Click button to see current sites
-          <Fadebox />
+        Links:<Fadebox />
         </div>
       </header>
     </div>

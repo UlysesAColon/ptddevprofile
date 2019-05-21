@@ -1,25 +1,22 @@
 import React from 'react';
-import PTDLLCIcon from '../src/images/PTDLLCIcon.jpg';
+import Profile_Photo from '../src/images/Profile_Photo.jpg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import Fadebox from './components/Fadebox/Fadebox';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
-        <img src={PTDLLCIcon} className="App-logo box bounce-1" alt="logo" />
+        <img src={Profile_Photo} className="App-logo box bounce-1" alt="logo" />
         <p>
          This is a page for my developer profile
         </p>
-        <a
-          className="App-link"
-          href="https://programmedtodestroy.herokuapp.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Back to the other PTD Page
-        </a>
+        <div>
+        Click button to see current sites
+          <Fadebox />
+        </div>
       </header>
     </div>
   );

@@ -11,7 +11,8 @@ import Profile_Photo from '../../images/Profile_Photo.jpg';
 
 const styles = theme => ({
   navmenu: {
-    opacity:1
+    background: 'linear-gradient(to right bottom, #78909c, #b0bec5, #cfd8dc, #b0bec5, #78909c)'
+    //  #cfd8dc, #b0bec5, #90a4ae
   },
   navbutton: {
     opacity: 1

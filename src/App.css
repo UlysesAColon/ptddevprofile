@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background-image:url("../src/images/Appbackground2.jpg") ;
+  background-image: linear-gradient(to right bottom, #29648a,#25274d);
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -28,7 +28,7 @@
   align-self: flex-end;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  background-color: #F44336;
+  background-color: rgb(17, 10, 9);
   height: 200px;
   margin: 0 auto 0 auto;
   transform-origin: bottom;

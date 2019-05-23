@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {MuiThemeProvider, createMuiTheme} from '@material-ui/core';
-import red from '@material-ui/core/colors/red';
-import { yellow } from '@material-ui/core/colors';
+import blue from '@material-ui/core/colors/blue';
+import { yellow, blueGrey } from '@material-ui/core/colors';
 
 const theme= createMuiTheme({
     palette:  {
         primary: {
-            main: red[400]
+            main: '#29648a',
         },
         secodary: {
             main: yellow[500]

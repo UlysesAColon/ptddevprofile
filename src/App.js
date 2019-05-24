@@ -66,7 +66,7 @@ I believe that teamwork and communication are paramount for a high functioning t
         </Grid>
         <Grid item xs={3}>
           <Paper className={classes.paper}> 
-          <h4>Skills</h4>
+          <h4>Skills to show papi</h4>
                 <List
                 align='center'>
                 {

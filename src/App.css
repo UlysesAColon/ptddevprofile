@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background-image: linear-gradient(to right bottom, #29648a,#25274d);
+  background-image: url("../src/images/Appbackgroundtester.jpg");
   background-size: cover;
   min-height: 100vh;
   display: flex;

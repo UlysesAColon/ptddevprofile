@@ -6,6 +6,12 @@ import Navbar from './components/Navbar/Navbar';
 import Paper from '@material-ui/core/Paper';
 import { List, ListItem } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import { Mongo_DB } from '../src/images/Mongo_DB.png';
+import { Node_JS } from '../src/images/Node_JS.png';
+import { HTML_Icon } from '../src/images/HTML_Icon.png';
+import { CSS_Icon } from '../src/images/CSS_Icon.png';
+import { Express_JS } from '../src/images/Express_JS.png';
+import { React_Icon } from '../src/images/React_Icon.png';
 
 const styles = theme => ({
   root: {
@@ -20,6 +26,16 @@ paper: {
     color: '#555f61',
     textAlign: 'center',
     opacity: .8
+},
+goldborder: {
+  margin: theme.spacing.unit,
+  backgroundImage:  "linear-gradient(to right bottom, #90caf9, #42a5f5)",
+  borderWidth:'2px',
+  borderColor: '#9e9e9e',
+  borderStyle: 'solid',
+  color: '#616161',
+  textAlign: 'center',
+  opacity: .8
 },
 svg: {
     width: 100,
@@ -41,7 +57,8 @@ listitems:{
 class App extends React.Component{
   render() {
     const { classes } = this.props;
-    const list = ["Javascript", "Mongodb", "Node.js", "HTML", "CSS", "Express", "React"];
+    const list = [ "Mongodb", "Node.js", "HTML", "CSS", "Express", "React"];
+    const listicons = [ Mongo_DB, Node_JS, HTML_Icon, Express_JS, React_Icon];
     const list2 = ["Cooking", "Puzzle Solving", "Crosswords", "Reading", "Miniature Wargaming", "Professional Sports"]
     console.log(list);
   return (
@@ -53,8 +70,18 @@ class App extends React.Component{
         <br />
         About Me:
         <Grid container spacing={24}>
+        <Grid item xs={12} >
+          <div className={classes.goldborder}>
+            Hello, I am Ulyses Colon. 
+            <br />
+            Full Stack Developer.
+          </div>
+        </Grid>
+        <Grid item xs={2} /> 
+        {/* Left Side */}
+        <Grid item xs={8}>
         <Grid item xs={12}>
-        <Paper className={classes.paper}>
+        <Paper className={classes.goldborder}>
         PROFILE
 I am a recent Coding bootcamp graduate breaking in to the development field. After 8 years in the Culinary industry as a Sous Chef I am applying my discipline, organization, and structural solution problems towards my skills in coding. I am comfortable in high pressure environments as well as aware that a need to produce is paramount to the success of a team.
 I know that hard work, perseverance, grit and creative problem-solving skills will solve the toughest of issues.
@@ -64,9 +91,11 @@ I interned with the Walt Disney corporation at the Grand Floridian resort. Throu
 I believe that teamwork and communication are paramount for a high functioning team to succeed.
         </Paper>
         </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}> 
-          <h4>Skills to show papi</h4>
+          <div>
+          <Grid container spacing={24}>
+          <Grid item xs={6} >
+          <Paper className={classes.goldborder}> 
+          <h4>Skills</h4>
                 <List
                 align='center'>
                 {
@@ -79,10 +108,9 @@ I believe that teamwork and communication are paramount for a high functioning t
                   ))
                   }
                 </List></Paper>
-        </Grid>
-        <Grid item xs={3} />
-        <Grid item xs={3}>
-          <Paper className={classes.paper}> 
+                </Grid>
+                <Grid item xs={6} >
+          <Paper className={classes.goldborder}> 
           <h4>Interests</h4>
                 <List
                 align='center'>
@@ -96,8 +124,12 @@ I believe that teamwork and communication are paramount for a high functioning t
                   ))
                   }
                 </List></Paper>
+                </Grid>
+                </Grid>
+            </div>
+        <Grid item xs={3}>
+          <Paper className={classes.goldborder}>xs=3</Paper>
         </Grid>
-       <Grid item xs={3} />
         <Grid item xs={3}>
           <Paper className={classes.paper}>xs=3</Paper>
         </Grid>
@@ -107,9 +139,9 @@ I believe that teamwork and communication are paramount for a high functioning t
         <Grid item xs={3}>
           <Paper className={classes.paper}>xs=3</Paper>
         </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
         </Grid>
+        <Grid item xs={2} />
+        {/* Right Side */}
       </Grid>
         <div>
         </div>

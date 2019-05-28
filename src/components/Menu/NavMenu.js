@@ -4,14 +4,15 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import PTDLLCIcon from '../../images/PTDLLCIcon.jpg';
+import Face_Photo from '../../images/Face_Photo.jpg';
 import Octocat from '../../images/Octocat.jpg';
 import In_Blue from '../../images/In_Blue.png';
-import Profile_Photo from '../../images/Profile_Photo.jpg';
+
 
 const styles = theme => ({
   navmenu: {
-    background: 'linear-gradient(to right bottom, #78909c, #b0bec5, #cfd8dc, #b0bec5, #78909c)'
+    background: 'linear-gradient(to right bottom, #90caf9, #42a5f5)',
+    opacity: '.8'
     //  #cfd8dc, #b0bec5, #90a4ae
   },
   navbutton: {
@@ -41,7 +42,7 @@ class NavMenu extends React.Component {
           aria-haspopup="true"
           onClick={this.handleClick}
         >
-          <img src={PTDLLCIcon} className="nav-logo-icon" alt="logo" /> 
+          <img src={Face_Photo} className="nav-logo-icon" alt="logo" /> 
         </Button>
         <Menu 
           id="simple-menu"
@@ -51,7 +52,6 @@ class NavMenu extends React.Component {
         >
           <MenuItem onClick={this.handleClose}><img src={Octocat} className="octocat" alt="github"></img> Github</MenuItem>
           <MenuItem onClick={this.handleClose}><img src={In_Blue} className="octocat" alt="linkedin"></img>LinkedIn Page</MenuItem>
-          <MenuItem onClick={this.handleClose}><img src={Profile_Photo} className="octocat" alt="linkedin"></img>About</MenuItem>
         </Menu>
       </div>
     );

@@ -1,6 +1,7 @@
 
 .App {
   text-align: center;
+  background-image:linear-gradient(to right bottom, #90caf9, #42a5f5);
 }
 
 .App-logo {
@@ -18,7 +19,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:#eeeeee;
 }
 
 .App-link {
@@ -46,8 +47,7 @@
 .middlebar{
   background-image:linear-gradient(to right bottom, #90caf9, #42a5f5);
   background-size: contain;
-  min-height: 100vh;
-  max-height: 200px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,4 +69,26 @@
 .middlebarimages{
   max-height: 100px;
   max-width: 100px;
+}
+.switchbutton{
+  color: #42a5f5
+}
+.facephoto{
+  max-height: 100px;
+  max-width: 100px;
+}
+.footer{
+  background-image:linear-gradient(to right bottom, #90caf9, #42a5f5);
+  background-size: contain;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.linkedimages{
+  max-width: 20px;
+  max-height: 20px;
 }

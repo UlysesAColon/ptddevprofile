@@ -6,6 +6,9 @@ import Paper from '@material-ui/core/Paper';
 import Grow from '@material-ui/core/Grow';
 import { red } from '@material-ui/core/colors';
 import Grid from '@material-ui/core/Grid';
+import Profile_photo from '../../images/Profile_Photo.jpg';
+import Smiling_Photo from '../../images/Smiling_Photo.jpg';
+import Chef_Photo from '../../images/Chef_Photo.jpg';
 
 const styles = theme => ({
   root: {
@@ -61,17 +64,29 @@ class Growbox extends React.Component {
         <Switch className="switchbutton" checked={checked} onChange={this.handleChange} aria-label="Collapse" />
         <div className={classes.container}>
           <Grow in={checked}>
-            <Paper elevation={4} className={classes.paper}>
              <div>
               <Grid item xs={12}>
-                <p>I am a recent Rutgers Coding bootcamp graduate breaking in to the development field. After 8 years in the Culinary industry as a Sous Chef I am applying my discipline, organization, and structural solution problems towards my skills in coding. I am comfortable in high pressure environments as well as aware that a need to produce is paramount to the success of a team.
+                <p className={classes.paper}>
+                I am a recent Rutgers Coding bootcamp graduate breaking in to the web development field.
+                <p />
+                After 8 years in the Culinary industry as a Sous Chef I am applying my discipline, organization, and structural solution problems towards my skills in coding. I am comfortable in high pressure environments as well as aware that a need to produce is paramount to the success of a team.
                 I know that hard work, perseverance, grit and creative problem-solving skills will solve the toughest of issues.
+                <p />
+                <div>
+                <Grid container spacing={24} >
+                <Grid item xs={4} >
+                <img src={Profile_photo} alt="profilephoto" className="aboutmephoto" /></Grid>
+                <Grid item xs={4} >
+                <img src={Smiling_Photo} alt="profilephoto" className="aboutmephoto" /></Grid>
+                <Grid item xs={4} >
+                <img src={Chef_Photo} alt="profilephoto" className="aboutmephoto" /></Grid>
+                </Grid>
+                </div>
                 </p>
                 </Grid>
                 <Grid item xs={6}>
                 </Grid>
               </div>
-            </Paper>
           </Grow>
         </div>
       </div>

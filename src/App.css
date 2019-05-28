@@ -1,7 +1,6 @@
 
 .App {
   text-align: center;
-  background-image:linear-gradient(to right bottom, #90caf9, #42a5f5);
 }
 
 .App-logo {
@@ -12,7 +11,7 @@
 
 .App-header {
   background-image: url("../src/images/Appbackgroundtester.jpg");
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -57,7 +56,7 @@
 }
 .secondbackground {
   background-image: url("../src/images/Appbackgroundtester2.jpg");
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -79,7 +78,7 @@
 }
 .footer{
   background-image:linear-gradient(to right bottom, #90caf9, #42a5f5);
-  background-size: contain;
+  background-size: cover;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -89,6 +88,15 @@
   color: white;
 }
 .linkedimages{
-  max-width: 20px;
-  max-height: 20px;
+  max-width: 40px;
+  max-height: 40px;
+}
+.aboutme{
+  text-align: center;
+}
+.aboutmephoto{
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }

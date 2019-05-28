@@ -11,7 +11,7 @@
 
 .App-header {
   background-image: url("../src/images/Appbackgroundtester.jpg");
-  background-size: cover;
+  background-size: contain;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,4 +42,31 @@
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-100px); }
   100% { transform: translateY(0); }
+}
+.middlebar{
+  background-image:linear-gradient(to right bottom, #90caf9, #42a5f5);
+  background-size: contain;
+  min-height: 100vh;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.secondbackground {
+  background-image: url("../src/images/Appbackgroundtester2.jpg");
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.middlebarimages{
+  max-height: 100px;
+  max-width: 100px;
 }

@@ -72,9 +72,9 @@ class App extends React.Component{
           <br />
             <img src={Face_Photo} alt="face" className="facephoto" />
             <br />
-            Hello, I am Ulyses Colon.
+            Hello, I am Ulyses Colon
             <br />
-            Full Stack Web Developer.
+            Full Stack Web Developer
           <h4>About Me:</h4>
         <Growbox />
           </div>

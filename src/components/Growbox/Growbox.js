@@ -2,13 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Switch from '@material-ui/core/Switch';
-import Paper from '@material-ui/core/Paper';
-import Grow from '@material-ui/core/Grow';
 import { red } from '@material-ui/core/colors';
 import Grid from '@material-ui/core/Grid';
 import Profile_photo from '../../images/Profile_Photo.jpg';
 import Smiling_Photo from '../../images/Smiling_Photo.jpg';
 import Chef_Photo from '../../images/Chef_Photo.jpg';
+import { Zoom } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
@@ -26,6 +25,21 @@ paper: {
   borderStyle: 'solid',
   color: '#616161',
   textAlign: 'center',
+},
+goldborder: {
+  margin: theme.spacing.unit,
+  backgroundImage:  "linear-gradient(to right bottom,  #1976d2,#1565c0)",
+  borderWidth:'1px',
+  borderRadius: '25px',
+  borderColor: '#fee101',
+  borderStyle: 'outset',
+  color: '#fffaf1',
+  textAlign: 'center',
+  opacity: 1,
+  height: '400px',
+  '&:hover': {
+    color: 'white'
+  }
 },
 polygon: {
     fill: theme.palette.common.white,
@@ -63,10 +77,10 @@ class Growbox extends React.Component {
       <div className={classes.root}>
         <Switch className="switchbutton" checked={checked} onChange={this.handleChange} aria-label="Collapse" />
         <div className={classes.container}>
-          <Grow in={checked}>
+          <Zoom in={checked}>
              <div>
               <Grid item xs={12}>
-                <p className={classes.paper}>
+                <p className={classes.goldborder}>
                 I am a recent Rutgers Coding bootcamp graduate breaking in to the web development field.
                 <p />
                 After 8 years in the Culinary industry as a Sous Chef I am applying my discipline, organization, and structural solution problems towards my skills in coding. I am comfortable in high pressure environments as well as aware that a need to produce is paramount to the success of a team.
@@ -87,7 +101,7 @@ class Growbox extends React.Component {
                 <Grid item xs={6}>
                 </Grid>
               </div>
-          </Grow>
+          </Zoom>
         </div>
       </div>
       </Grid>

@@ -36,7 +36,7 @@ goldborder: {
   color: '#fffaf1',
   textAlign: 'center',
   opacity: 1,
-  height: '400px',
+  maxHeight: '800px',
   '&:hover': {
     color: 'white'
   }

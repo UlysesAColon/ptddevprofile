@@ -68,7 +68,8 @@ class App extends React.Component{
       <header className="App-header">
         <Grid container spacing={24}>
         <Grid item xs={2} />
-        <Grid item xs={8} >
+        <Grid item xs={2} />
+        <Grid item xs={4} >
           <div className={classes.goldborder}>
           <br />
             <img src={Face_Photo} alt="face" className="facephoto" />

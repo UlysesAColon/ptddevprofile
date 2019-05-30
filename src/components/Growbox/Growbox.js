@@ -28,17 +28,19 @@ paper: {
 },
 goldborder: {
   margin: theme.spacing.unit,
-  backgroundImage:  "linear-gradient(to right bottom,  #1976d2,#1565c0)",
+  backgroundImage:  "linear-gradient(to right bottom,  #7285a5, #7285b8)",
   borderWidth:'1px',
   borderRadius: '25px',
-  borderColor: '#fee101',
+  borderColor: 'black',
   borderStyle: 'outset',
   color: '#fffaf1',
   textAlign: 'center',
   opacity: 1,
   maxHeight: '800px',
   '&:hover': {
-    color: 'white'
+    '&:hover': {
+      boxShadow: '.4em 0 .4em #90caf9, -.4em 0 .4em #90caf9 '
+    }
   }
 },
 polygon: {

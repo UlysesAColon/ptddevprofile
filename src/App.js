@@ -27,17 +27,17 @@ paper: {
 },
 goldborder: {
   margin: theme.spacing.unit,
-  backgroundImage:  "linear-gradient(to right bottom,  #1976d2,#1565c0)",
+  backgroundImage:  "linear-gradient(to right bottom,  #7285a5, #7285b8)",
   borderWidth:'1px',
   borderRadius: '25px',
-  borderColor: '#fee101',
+  borderColor: 'black',
   borderStyle: 'outset',
   color: '#fffaf1',
   textAlign: 'center',
   opacity: 1,
   height: '400px',
   '&:hover': {
-    color: 'white'
+    boxShadow: '.4em 0 .4em #90caf9, -.4em 0 .4em #90caf9 '
   }
 },
 svg: {
@@ -76,7 +76,7 @@ class App extends React.Component{
             <br />
             Hello, I am Ulyses Colon
             <br />
-            Full Stack Web Developer
+            Full Stack Web Developer  
           <h4>About Me:</h4>
         <Growbox />
           </div>

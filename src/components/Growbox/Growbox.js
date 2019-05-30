@@ -28,7 +28,7 @@ paper: {
 },
 goldborder: {
   margin: theme.spacing.unit,
-  backgroundImage:  "linear-gradient(to right bottom,  #7285a5, #7285b8)",
+  backgroundImage:  "linear-gradient(to right bottom,  #5680e9, #84ceeb)",
   borderWidth:'1px',
   borderRadius: '25px',
   borderColor: 'black',
@@ -36,6 +36,8 @@ goldborder: {
   color: '#fffaf1',
   textAlign: 'center',
   opacity: 1,
+  overflowX: 'hidden',
+  overflowY: 'auto',
   maxHeight: '800px',
   '&:hover': {
     '&:hover': {
@@ -82,12 +84,26 @@ class Growbox extends React.Component {
           <Zoom in={checked}>
              <div>
               <Grid item xs={12}>
+              <div className="scrollhider">
+              <br />
                 <p className={classes.goldborder}>
-                I am a recent Rutgers Coding bootcamp graduate breaking in to the web development field.
+                <br />
+                I am an inquisitive developer who used to be in the culinary world. Now I design websites and applications for myself and those who are interested in my skills. 
                 <p />
-                After 8 years in the Culinary industry as a Sous Chef I am applying my discipline, organization, and structural solution problems towards my skills in coding. I am comfortable in high pressure environments as well as aware that a need to produce is paramount to the success of a team.
-                I know that hard work, perseverance, grit and creative problem-solving skills will solve the toughest of issues.
+                After 8 years in the Culinary industry as a Sous Chef I found that I loved to work my mind as well as my tastebuds. I began to search out new and interesting challenges and fell into the deep and passionate world on web development. I quickly discovered that each new language and library was like a cuisine. Each is rich with new techniques and skills to explore. Currently I am in the rabilt hole that is React and loving it!
                 <p />
+                <p>
+                  The satisfaction of a job well done and a team you can build trust and comradierie with are important to the functional success on any project. I love to make friends, encounter and surmount new obstacles, as well as get out of my comfort zone. The thrill of a goal completed and a new skill learned are what drives me towards a process of continued improvement.
+                </p>
+                <p>
+                  Check out below some of my interests and hobbies, and if you think you would like me to be a part fo your team please reach out to me. Im always happy for a chat and to meet new people.
+                </p>
+                <p>
+                  Best,
+                </p>
+                <p>
+                  Ulyses Colon
+                </p>
                 <div>
                 <Grid container spacing={24} >
                 <Grid item xs={4} >
@@ -98,7 +114,9 @@ class Growbox extends React.Component {
                 <img src={Chef_Photo} alt="profilephoto" className="aboutmephoto" /></Grid>
                 </Grid>
                 </div>
+                <br />
                 </p>
+                </div>
                 </Grid>
                 <Grid item xs={6}>
                 </Grid>

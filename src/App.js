@@ -27,7 +27,7 @@ paper: {
 },
 goldborder: {
   margin: theme.spacing.unit,
-  backgroundImage:  "linear-gradient(to right bottom,  #7285a5, #7285b8)",
+  backgroundImage:  "linear-gradient(to right bottom,  #5680e9, #84ceeb)",
   borderWidth:'1px',
   borderRadius: '25px',
   borderColor: 'black',
@@ -114,42 +114,7 @@ class App extends React.Component{
           </Grid> 
           <Grid item xs={2} />
         </Grid>
-        {/* <Grid container spacing={24}>
-          <Grid item xs={6} >
-          <Paper className={classes.goldborder}> 
-          <h4>Skills</h4>
-                <List
-                align='center'>
-                {
-                  list.map((item, i) => (
-                <ListItem className={classes.listitems}
-                justifyContent='center'
-                title={item} >
-                {item}
-                </ListItem>
-                  ))
-                  }
-                </List></Paper>
-                </Grid>
-                <Grid item xs={6} >
-          <Paper className={classes.goldborder}> 
-          <h4>Interests</h4>
-                <div>
-                <List
-                align='center'>
-                {
-                  list2.map((item, i) => (
-                <ListItem className={classes.listitems}
-                justifyContent='center'
-                title={item} >
-                {item}
-                </ListItem>
-                  ))
-                  }
-                </List>
-                </div></Paper>
-                </Grid>
-                </Grid> */}
+        
         </div>
         <div className="footer">
         <Grid container spacing={24} >

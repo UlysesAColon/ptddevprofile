@@ -21,7 +21,6 @@
   font-size: calc(10px + 2vmin);
   color:#eeeeee;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -148,4 +147,7 @@
   height:200px;
   width:70px;
   border-radius: 25px;
+}
+::-webkit-scrollbar {
+  display: none;
 }

@@ -107,8 +107,6 @@ class Growbox extends React.Component {
                 <div>
                 <Grid container spacing={24} >
                 <Grid item xs={4} >
-                <img src={Profile_photo} alt="profilephoto" className="aboutmephoto" /></Grid>
-                <Grid item xs={4} >
                 <img src={Smiling_Photo} alt="profilephoto" className="aboutmephoto" /></Grid>
                 <Grid item xs={4} >
                 <img src={Chef_Photo} alt="profilephoto" className="aboutmephoto" /></Grid>

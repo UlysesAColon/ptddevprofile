@@ -10,6 +10,7 @@ import Face_Photo from './images/Face_Photo.jpg';
 import Octocat from './images/Octocat.jpg';
 import In_Blue from './images/In_Blue.png';
 import PTDLLCIcon from './images/PTDLLCIcon.jpg';
+import AboutMe from './components/AboutMe/AboutMe';
 
 const styles = theme => ({
   root: {
@@ -27,7 +28,7 @@ paper: {
 },
 goldborder: {
   margin: theme.spacing.unit,
-  backgroundImage:  "linear-gradient(to right bottom,  #5680e9, #84ceeb)",
+  backgroundColor:  "black",
   borderWidth:'1px',
   borderRadius: '25px',
   borderColor: 'black',
@@ -66,34 +67,12 @@ class App extends React.Component{
   return (
     <div className="App">
       <header className="App-header">
-        <Grid container spacing={24}>
-        <Grid item xs={2} />
-        <Grid item xs={2} />
-        <Grid item xs={4} >
-          <div className={classes.goldborder}>
-          <br />
-            <img src={Face_Photo} alt="face" className="facephoto" />
-            <br />
-            Hello, I am Ulyses Colon
-            <br />
-            Full Stack Web Developer  
-          <h4>About Me:</h4>
-        <Growbox />
-          </div>
-        </Grid>
-        <Grid item xs={2} />
-        <Grid item xs={2} /> 
-        {/* Left Side */}
-        <Grid item xs={8}>
-        <Grid item xs={12}>
-       
-        </Grid>
-          <div>
-          </div>
-        </Grid>
-        <Grid item xs={2} />
-        {/* Right Side */}
-      </Grid>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <AboutMe />
       </header>
         <div className="middlebar" >
         <h2>Technology</h2> 
@@ -114,7 +93,7 @@ class App extends React.Component{
           </Grid> 
           <Grid item xs={2} />
         </Grid>
-        
+        <br />
         </div>
         <div className="footer">
         <Grid container spacing={24} >

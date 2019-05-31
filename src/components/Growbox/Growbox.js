@@ -28,7 +28,7 @@ paper: {
 },
 goldborder: {
   margin: theme.spacing.unit,
-  backgroundImage:  "linear-gradient(to right bottom,  #5680e9, #84ceeb)",
+  backgroundColor:  "black",
   borderWidth:'1px',
   borderRadius: '25px',
   borderColor: 'black',

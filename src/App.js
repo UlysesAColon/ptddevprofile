@@ -11,6 +11,7 @@ import Octocat from './images/Octocat.jpg';
 import In_Blue from './images/In_Blue.png';
 import PTDLLCIcon from './images/PTDLLCIcon.jpg';
 import AboutMe from './components/AboutMe/AboutMe';
+import Iframe from '../node_modules/react-iframe';
 
 const styles = theme => ({
   root: {
@@ -36,7 +37,6 @@ goldborder: {
   color: '#fffaf1',
   textAlign: 'center',
   opacity: 1,
-  height: '400px',
   '&:hover': {
     boxShadow: '.4em 0 .4em #90caf9, -.4em 0 .4em #90caf9 '
   }
@@ -87,10 +87,32 @@ class App extends React.Component{
         </div>
         <div className="secondbackground">
         <Grid container spacing={24}>
+        <Grid item xs={4} />
+          <Grid item xs={4}>
+          <div className={classes.goldborder}>
+            Some Previous Projects
+            </div>
+          </Grid>
+          <Grid item xs={4} />
           <Grid item xs={2} />
-          <Grid item xs={8}>
-          <h1>THis is placeholder</h1>
+          <Grid item xs={4}>
+          <Iframe  url="https://ulysesacolon.github.io/ThisDay/"
+          width="550px"
+          height="550px"
+          id="myId"
+          className="myClassname"
+          display="initial"
+          position="relative"/>
           </Grid> 
+          <Grid item xs={4}>
+          <Iframe  url="https://programmedtodestroy.herokuapp.com/"
+          width="550px"
+          height="550px"
+          id="myId"
+          className="myClassname"
+          display="initial"
+          position="relative"/>
+          </Grid>
           <Grid item xs={2} />
         </Grid>
         <br />

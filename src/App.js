@@ -86,6 +86,8 @@ class App extends React.Component{
         </Grid>
         </div>
         <div className="secondbackground">
+        <br />
+        <br />
         <Grid container spacing={24}>
         <Grid item xs={4} />
           <Grid item xs={4}>

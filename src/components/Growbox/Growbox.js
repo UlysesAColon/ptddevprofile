@@ -90,13 +90,13 @@ class Growbox extends React.Component {
                 <br />
                 I am an inquisitive developer who used to be in the culinary world. Now I design websites and applications for myself and those who are interested in my skills. 
                 <p />
-                After 8 years in the Culinary industry as a Sous Chef I found that I loved to work my mind as well as my tastebuds. I began to search out new and interesting challenges and fell into the deep and passionate world on web development. I quickly discovered that each new language and library was like a cuisine. Each is rich with new techniques and skills to explore. Currently I am in the rabilt hole that is React and loving it!
+                After 8 years in the Culinary industry as a Sous Chef I found that I loved to work my mind as well as my tastebuds. I began to search out new and interesting challenges and fell into the deep and passionate world of web development. I quickly discovered that each new language and library was like a cuisine. Each is rich with new techniques and skills to explore. Currently I am in the rabbit hole that is React and loving it!
                 <p />
                 <p>
                   The satisfaction of a job well done and a team you can build trust and comradierie with are important to the functional success on any project. I love to make friends, encounter and surmount new obstacles, as well as get out of my comfort zone. The thrill of a goal completed and a new skill learned are what drives me towards a process of continued improvement.
                 </p>
                 <p>
-                  Check out below some of my interests and hobbies, and if you think you would like me to be a part fo your team please reach out to me. Im always happy for a chat and to meet new people.
+                  Check out below some of my previous projects, and if you think you would like me to be a part of your team please reach out to me. Im always happy for a chat and to meet new people.
                 </p>
                 <p>
                   Best,

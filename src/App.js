@@ -107,7 +107,7 @@ class App extends React.Component{
           position="relative"/>
           </Grid> 
           <Grid item xs={4}>
-          <Iframe  url="https://programmedtodestroy.herokuapp.com/"
+          <Iframe  url="https://ptdsite.herokuapp.com/"
           width="550px"
           height="550px"
           id="myId"

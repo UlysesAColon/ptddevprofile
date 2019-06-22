@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import './App.css';
-import Paper from '@material-ui/core/Paper';
-import { List, ListItem } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import Growbox from './components/Growbox/Growbox';
-import Face_Photo from './images/Face_Photo.jpg';
 import Octocat from './images/Octocat.jpg';
 import In_Blue from './images/In_Blue.png';
 import PTDLLCIcon from './images/PTDLLCIcon.jpg';
@@ -38,7 +34,7 @@ goldborder: {
   textAlign: 'center',
   opacity: 1,
   '&:hover': {
-    boxShadow: '.4em 0 .4em #90caf9, -.4em 0 .4em #90caf9 '
+    boxShadow: '.4em 0 .4em #818f9b, -.4em 0 .4em #818f9b '
   }
 },
 svg: {
@@ -62,7 +58,6 @@ class App extends React.Component{
   render() {
     const { classes } = this.props;
     const list = [ "Mongodb", "Node.js", "HTML", "CSS", "Express", "React"];
-    const list2 = ["Cooking", "Puzzle Solving", "Crosswords", "Reading", "Miniature Wargaming", "Professional Sports"]
     console.log(list);
   return (
     <div className="App">
@@ -107,13 +102,6 @@ class App extends React.Component{
           position="relative"/>
           </Grid> 
           <Grid item xs={4}>
-          <Iframe  url="https://ptdsite.herokuapp.com/"
-          width="550px"
-          height="550px"
-          id="myId"
-          className="myClassname"
-          display="initial"
-          position="relative"/>
           </Grid>
           <Grid item xs={2} />
         </Grid>

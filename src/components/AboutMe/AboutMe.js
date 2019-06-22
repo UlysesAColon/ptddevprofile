@@ -1,14 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import { List, ListItem } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Growbox from '../Growbox/Growbox';
 import Face_Photo from '../../images/Face_Photo.jpg';
-import Octocat from '../../images/Octocat.jpg';
-import In_Blue from '../../images/In_Blue.png';
-import PTDLLCIcon from '../../images/PTDLLCIcon.jpg';
 
 
 
@@ -28,18 +23,18 @@ const styles = theme => ({
   },
   goldborder: {
     margin: theme.spacing.unit,
-    backgroundColor:  "black",
+    backgroundColor:  "#555f61",
     borderWidth:'1px',
     borderRadius: '25px',
     borderColor: 'black',
     borderStyle: 'outset',
     color: '#fffaf1',
     textAlign: 'center',
-    opacity: 1,
+    opacity: .9,
     height: '400px',
-    '&:hover': {
-      boxShadow: '.4em 0 .4em #90caf9, -.4em 0 .4em #90caf9 '
-    }
+    // '&:hover': {
+    //   boxShadow: '.4em 0 .4em #818f9b, -.4em 0 .4em #818f9b '
+    // }
   },
   svg: {
       width: 100,

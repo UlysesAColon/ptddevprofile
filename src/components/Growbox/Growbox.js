@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Switch from '@material-ui/core/Switch';
 import { red } from '@material-ui/core/colors';
 import Grid from '@material-ui/core/Grid';
-import Profile_photo from '../../images/Profile_Photo.jpg';
 import Smiling_Photo from '../../images/Smiling_Photo.jpg';
 import Chef_Photo from '../../images/Chef_Photo.jpg';
 import { Zoom } from '@material-ui/core';
@@ -28,7 +27,7 @@ paper: {
 },
 goldborder: {
   margin: theme.spacing.unit,
-  backgroundColor:  "black",
+  backgroundColor:  "#555f61",
   borderWidth:'1px',
   borderRadius: '25px',
   borderColor: 'black',
@@ -40,9 +39,9 @@ goldborder: {
   overflowY: 'auto',
   maxHeight: '800px',
   '&:hover': {
-    '&:hover': {
-      boxShadow: '.4em 0 .4em #90caf9, -.4em 0 .4em #90caf9 '
-    }
+    // '&:hover': {
+    //   boxShadow: '.4em 0 .4em #818f9b, -.4em 0 .4em #818f9b '
+    // }
   }
 },
 polygon: {

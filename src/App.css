@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background-image: url("../src/images/new_jerseybackground.jpg");
+  background-image: url("../src/images/office_image.jpg");
   background-size: cover;
   height: 1500px;
   display: flex;
@@ -82,7 +82,7 @@
   z-index: -1;
 }
 .secondbackground {
-  background-image: url("../src/images/Appbackgroundtester2.jpg");
+  background-image: url("../src/images/headway_office.jpg");
   background-size: cover;
   min-height: 100vh;
   display: flex;
